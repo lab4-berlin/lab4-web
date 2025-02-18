@@ -90,9 +90,9 @@ export function Home() {
       <section className="mb-16">
         <div className="flex items-center gap-4 mb-8">
           <img
-            src="/images/data-pipeline-logo.png"
-            alt="Data PipeLINE Logo"
-            className="w-48"
+              src="/images/data-pipeline-logo.png"
+              alt="Data PipeLINE Logo"
+              className="w-48"
           />
           <div>
             <h2 className="text-5xl font-bold text-[#127ff0]">Blog</h2>
@@ -101,16 +101,15 @@ export function Home() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="relative pt-[56.25%] w-full">
+          {/* YouTube frame is now 50% smaller */}
+          <div className="aspect-[9/16] w-3/4 mx-auto">
             <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/XgKOCvp1j_s"
-              title="Data PipeLINE Introduction"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+                className="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/XgKOCvp1j_s"
+                title="Data PipeLINE Introduction"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
             ></iframe>
           </div>
 
@@ -118,12 +117,13 @@ export function Home() {
             <h3 className="text-2xl font-bold text-[#127ff0] mb-4">Episodes:</h3>
             <div className="space-y-4">
               <Link
-                to="/blog/data-mesh-hype"
-                className="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow"
+                  to="/blog/data-mesh-hype"
+                  className="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow"
               >
                 <h4 className="text-xl font-bold text-[#127ff0]">Episode #0: "Data Mesh: Is the Hype Over?"</h4>
                 <p className="text-gray-600 mt-2">
-                  Everyone was talking about Data Mesh a few years ago, now, not so much. Was it just hype, or is there something deeper to learn?
+                  Everyone was talking about Data Mesh a few years ago, now, not so much. Was it just hype, or is there
+                  something deeper to learn?
                 </p>
               </Link>
             </div>
