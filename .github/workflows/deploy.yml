@@ -1,0 +1,40 @@
+name: Deploy Vite + React to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Run on every push to the main branch
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Use the Node.js version you prefer
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build the Project
+        run: npm run build
+
+      - name: Add .nojekyll (Fixes GitHub Pages Issues)
+        run: touch dist/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Deploy to this branch
+          folder: dist  # Deploy the built files from dist/
