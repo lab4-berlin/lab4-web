@@ -20,4 +20,5 @@ npm run preview
 npm install
 npm install gh-pages --save-dev
 # deploy
+npm run build
 npm run deploy
