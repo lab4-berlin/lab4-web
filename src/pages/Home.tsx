@@ -54,7 +54,10 @@ export function Home() {
         <div>
           <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Contacts</h2>
           <div className="bg-gray-100 p-6 rounded-lg">
-            <button className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6">
+            <button
+                className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6"
+                onClick={() => window.location.href = "https://calendar.lab4.berlin"}
+            >
               Book a free appointment
             </button>
             <div>
@@ -65,8 +68,8 @@ export function Home() {
               <div>
                 <h3 className="text-xl font-bold mb-1">Postal address</h3>
                 <p className="text-gray-600">
-                  Lab IV<br />
-                  Postfach 40747<br />
+                  Lab IV<br/>
+                  Postfach 40747<br/>
                   10064 Berlin
                 </p>
               </div>
