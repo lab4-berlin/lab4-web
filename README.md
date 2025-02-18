@@ -1,6 +1,6 @@
 # lab4-web
 
-```
+```bash
 #clone this repository locally
 
 #if needed run
