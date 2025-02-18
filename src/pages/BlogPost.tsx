@@ -5,10 +5,10 @@ export function BlogPost() {
         <img 
           src="/images/data-pipeline-logo.png" 
           alt="Data PipeLINE Logo" 
-          className="w-48"
+          className="w-36"
         />
         <div>
-          <h2 className="text-5xl font-bold text-[#ff5500]">Blog</h2>
+          <h2 className="text-5xl font-bold text-[#127ff0]">Blog</h2>
           <p className="text-xl text-[#127ff0]">Smoking Pipes and Talking about Data and Engineering</p>
         </div>
       </div>
@@ -22,7 +22,7 @@ export function BlogPost() {
           <div className="aspect-video w-full mb-6">
             <iframe 
               className="w-full h-full rounded-lg shadow-lg"
-              src="https://youtu.be/Q6I9rFyZAp4"
+              src="https://www.youtube.com/embed/Q6I9rFyZAp4"
               title="Data PipeLINE - Episode #0"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

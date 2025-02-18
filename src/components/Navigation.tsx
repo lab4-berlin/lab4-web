@@ -17,7 +17,7 @@ export function Navigation() {
         </div>
         <div className="flex items-center gap-4">
           <a href="https://www.linkedin.com" className="text-[#127ff0] hover:text-[#ff5500]">
-            <Linkedin className="w-6 h-6" />
+            <Linkedin className="w-9 h-9" />
           </a>
         </div>
       </div>

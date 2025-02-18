@@ -6,16 +6,16 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-center gap-6">
           <a href="#" className="text-[#127ff0] hover:text-[#ff5500]">
-            <Linkedin className="w-6 h-6" />
+            <Linkedin className="w-9 h-9" />
           </a>
           <a href="#" className="text-[#127ff0] hover:text-[#ff5500]">
-            <Mail className="w-6 h-6" />
+            <Mail className="w-9 h-9" />
           </a>
           <a href="#" className="text-[#127ff0] hover:text-[#ff5500]">
-            <Youtube className="w-6 h-6" />
+            <Youtube className="w-9 h-9" />
           </a>
           <a href="#" className="text-[#127ff0] hover:text-[#ff5500]">
-            <Github className="w-6 h-6" />
+            <Github className="w-9 h-9" />
           </a>
         </div>
       </div>
