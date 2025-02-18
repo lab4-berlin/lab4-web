@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Testimonials } from '../components/Testimonials';
 
 export function Home() {
   return (
@@ -47,16 +48,15 @@ export function Home() {
         </p>
       </section>
 
+      <Testimonials />
+
       <section className="grid md:grid-cols-2 gap-8 mb-16">
         <div>
           <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Contacts</h2>
           <div className="bg-gray-100 p-6 rounded-lg">
-            <a href="http://calendar.lab4.berlin" target="_blank" rel="noopener noreferrer">
-              <button
-                className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6">
-                Book a free appointment
-              </button>
-            </a>
+            <button className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6">
+              Book a free appointment
+            </button>
             <div>
               <div className="mb-4">
                 <h3 className="text-xl font-bold mb-1">Telephone</h3>
@@ -65,20 +65,18 @@ export function Home() {
               <div>
                 <h3 className="text-xl font-bold mb-1">Postal address</h3>
                 <p className="text-gray-600">
-                  Lab IV<br/>
-                  Postfach 40747<br/>
+                  Lab IV<br />
+                  Postfach 40747<br />
                   10064 Berlin
                 </p>
               </div>
             </div>
           </div>
         </div>
-
-        {/* <div>
+        <div>
           <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Consultation</h2>
           <div className="bg-gray-100 p-6 rounded-lg">
-            <button
-              className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6">
+            <button className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6">
               Buy
             </button>
             <div>
@@ -86,8 +84,7 @@ export function Home() {
               <p className="text-3xl font-bold text-[#127ff0]">€10</p>
             </div>
           </div>
-        </div> */}
-
+        </div>
       </section>
 
       <section className="mb-16">
@@ -95,7 +92,7 @@ export function Home() {
           <img
             src="/images/data-pipeline-logo.png"
             alt="Data PipeLINE Logo"
-            className="w-36"
+            className="w-48"
           />
           <div>
             <h2 className="text-5xl font-bold text-[#127ff0]">Blog</h2>
@@ -104,10 +101,11 @@ export function Home() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* YouTube frame is now 50% smaller */}
-          <div className="aspect-[9/16] w-3/4 mx-auto">
+          <div className="relative pt-[56.25%] w-full">
             <iframe
-              className="w-full h-full rounded-lg shadow-lg"
+              className="absolute top-0 left-0 w-full h-full"
+              width="560"
+              height="315"
               src="https://www.youtube.com/embed/XgKOCvp1j_s"
               title="Data PipeLINE Introduction"
               frameBorder="0"
