@@ -1,5 +1,6 @@
 # lab4-web
 
+## Deploy locally
 ```bash
 #clone this repository locally
 
@@ -13,3 +14,10 @@ npm run build
 #to test run
 npm run preview
 ```
+## Deploy to GitHub Pages
+```bash
+# if needed
+npm install
+npm install gh-pages --save-dev
+# deploy
+npm run deploy
