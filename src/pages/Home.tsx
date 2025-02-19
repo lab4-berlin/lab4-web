@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Testimonials } from '../components/Testimonials';
 
 export function Home() {
   return (
@@ -47,16 +48,18 @@ export function Home() {
         </p>
       </section>
 
+      <Testimonials />
+
       <section className="grid md:grid-cols-2 gap-8 mb-16">
         <div>
           <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Contacts</h2>
           <div className="bg-gray-100 p-6 rounded-lg">
-            <a href="http://calendar.lab4.berlin" target="_blank" rel="noopener noreferrer">
-              <button
-                className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6">
-                Book a free appointment
-              </button>
-            </a>
+            <button
+                className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6"
+                onClick={() => window.location.href = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0IGtjX_crgMVurFiau0dAyjRfbtacZr82oJiROaObcP4kmif4QfyVABrgcbP1AGs1i4Ya8iIWi"}
+            >
+              Book a free appointment
+            </button>
             <div>
               <div className="mb-4">
                 <h3 className="text-xl font-bold mb-1">Telephone</h3>
@@ -73,29 +76,24 @@ export function Home() {
             </div>
           </div>
         </div>
-
-        {/* <div>
+        <div>
           <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Consultation</h2>
           <div className="bg-gray-100 p-6 rounded-lg">
             <button
-              className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6">
-              Buy
+                className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6"
+                onClick={() => window.location.href = "https://buy.stripe.com/cN29BPfSHaD76oE146"}>
+              Buy Voucher
             </button>
-            <div>
-              <h3 className="text-xl font-bold mb-1">Consultation - Voucher</h3>
-              <p className="text-3xl font-bold text-[#127ff0]">€10</p>
-            </div>
           </div>
-        </div> */}
-
+        </div>
       </section>
 
       <section className="mb-16">
         <div className="flex items-center gap-4 mb-8">
           <img
-            src="/images/data-pipeline-logo.png"
-            alt="Data PipeLINE Logo"
-            className="w-36"
+              src="/images/data-pipeline-logo.png"
+              alt="Data PipeLINE Logo"
+              className="w-48"
           />
           <div>
             <h2 className="text-5xl font-bold text-[#127ff0]">Blog</h2>
@@ -107,12 +105,12 @@ export function Home() {
           {/* YouTube frame is now 50% smaller */}
           <div className="aspect-[9/16] w-3/4 mx-auto">
             <iframe
-              className="w-full h-full rounded-lg shadow-lg"
-              src="https://www.youtube.com/embed/XgKOCvp1j_s"
-              title="Data PipeLINE Introduction"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+                className="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/XgKOCvp1j_s"
+                title="Data PipeLINE Introduction"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
             ></iframe>
           </div>
 
@@ -120,12 +118,13 @@ export function Home() {
             <h3 className="text-2xl font-bold text-[#127ff0] mb-4">Episodes:</h3>
             <div className="space-y-4">
               <Link
-                to="/blog/data-mesh-hype"
-                className="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow"
+                  to="/blog/data-mesh-hype"
+                  className="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow"
               >
                 <h4 className="text-xl font-bold text-[#127ff0]">Episode #0: "Data Mesh: Is the Hype Over?"</h4>
                 <p className="text-gray-600 mt-2">
-                  Everyone was talking about Data Mesh a few years ago, now, not so much. Was it just hype, or is there something deeper to learn?
+                  Everyone was talking about Data Mesh a few years ago, now, not so much. Was it just hype, or is there
+                  something deeper to learn?
                 </p>
               </Link>
             </div>
