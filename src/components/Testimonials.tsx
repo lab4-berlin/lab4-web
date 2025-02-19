@@ -11,15 +11,15 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     name: "Christian Vollmann",
-    role: "Founder of edarling.de, nebenan.de, C1 Green Chemicals AG",
-    image: "/images/testimonials_cv.jpg",
+    role: "Entrepreneur and investor who has shaped Germany’s digital landscape with over 70 startups, including nebenan.de, eDarling, and MyVideo",
+    image: "/images/testimonials_cv.jpeg",
     text: "Ilya is an excellent programmer, a hard worker, a dedicated and loyal employee and a great team worker. It is a pleasure to work with him."
   },
   {
-    name: "Michael Rodriguez",
-    role: "CTO at HealthTech Solutions",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
-    text: "Working with Ilya was a game-changer. His deep understanding of data engineering and team dynamics helped us scale efficiently."
+    name: "Michael Schrezenmaier",
+    role: "Former Co-CEO of Pipedrive and CEO Europe at SumUp, now Partner at Incharge Capital Partners.",
+    image: "/images/testimonials_ms.jpeg",
+    text: "I had the pleasure to work with Ilya on a variety of topics. He combined a keen thinking and can-do attitude which I highly valued. We were sad to see him leave but I wish him all the best and beyond doubt he will succeed."
   },
   {
     name: "Emma Thompson",
