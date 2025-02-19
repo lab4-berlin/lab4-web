@@ -22,10 +22,10 @@ const testimonials: Testimonial[] = [
     text: "I had the pleasure to work with Ilya on a variety of topics. He combined a keen thinking and can-do attitude which I highly valued. We were sad to see him leave but I wish him all the best and beyond doubt he will succeed."
   },
   {
-    name: "Emma Thompson",
-    role: "VP of Engineering at DataFlow",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400",
-    text: "Ilya's approach to data team leadership is exceptional. He helped us build a strong, autonomous team in just 6 months."
+    name: "David Rodriguez",
+    role: "Former CEO of Delivery Hero Germany and CFO of Lieferando, is a data-driven leader who has led major digital transformations at multiple top companies.",
+    image: "/images/testimonials_dr.jpeg",
+    text: "Ilya was dealing with billing and data warehouse at a high professional level. He is a great developer and very pragmatic personality. I liked his accuracy and data driven approach. He is stress resistant and very focussed on result and performance. It was a pleasure working with Ilya and can highly recommend him."
   }
 ];
 
