@@ -56,7 +56,7 @@ export function Home() {
           <div className="bg-gray-100 p-6 rounded-lg">
             <button
                 className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6"
-                onClick={() => window.location.href = "https://calendar.lab4.berlin"}
+                onClick={() => window.location.href = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0IGtjX_crgMVurFiau0dAyjRfbtacZr82oJiROaObcP4kmif4QfyVABrgcbP1AGs1i4Ya8iIWi"}
             >
               Book a free appointment
             </button>
@@ -79,13 +79,11 @@ export function Home() {
         <div>
           <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Consultation</h2>
           <div className="bg-gray-100 p-6 rounded-lg">
-            <button className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6">
-              Buy
+            <button
+                className="w-full bg-[#127ff0] text-white px-6 py-2 rounded hover:bg-[#ff5500] transition-colors mb-6"
+                onClick={() => window.location.href = "https://buy.stripe.com/cN29BPfSHaD76oE146"}>
+              Buy Voucher
             </button>
-            <div>
-              <h3 className="text-xl font-bold mb-1">Consultation - Voucher</h3>
-              <p className="text-3xl font-bold text-[#127ff0]">€10</p>
-            </div>
           </div>
         </div>
       </section>

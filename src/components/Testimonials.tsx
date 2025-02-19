@@ -10,10 +10,10 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Sarah Chen",
-    role: "Head of Data Science at TechCorp",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400",
-    text: "Ilya's guidance transformed our data team. His expertise in implementing Data Mesh principles was invaluable."
+    name: "Christian Vollmann",
+    role: "Founder of edarling.de, nebenan.de, C1 Green Chemicals AG",
+    image: "/images/testimonials_cv.jpg",
+    text: "Ilya is an excellent programmer, a hard worker, a dedicated and loyal employee and a great team worker. It is a pleasure to work with him."
   },
   {
     name: "Michael Rodriguez",
