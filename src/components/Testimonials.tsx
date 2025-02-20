@@ -11,7 +11,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     name: "Christian Vollmann",
-    role: "Entrepreneur and investor who has shaped Germany’s digital landscape with over 70 startups, including nebenan.de, eDarling, and MyVideo",
+    role: "Entrepreneur and investor who has shaped Germany's digital landscape with over 70 startups, including nebenan.de, eDarling, and MyVideo",
     image: "/images/testimonials_cv.jpeg",
     text: "Ilya is an excellent programmer, a hard worker, a dedicated and loyal employee and a great team worker. It is a pleasure to work with him."
   },
@@ -48,7 +48,7 @@ export function Testimonials() {
     <section className="mb-16">
       <h2 className="text-3xl font-bold text-[#127ff0] mb-8">What People Say</h2>
 
-      <div className="relative bg-gray-50 rounded-xl p-8">
+      <div className="relative bg-gray-50 rounded-xl px-16 py-8">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <img
             src={testimonials[currentIndex].image}

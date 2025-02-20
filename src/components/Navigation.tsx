@@ -1,4 +1,4 @@
-import { Linkedin } from 'lucide-react';
+import { Linkedin, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function Navigation() {
@@ -16,8 +16,19 @@ export function Navigation() {
           </Link>
         </div>
         <div className="flex items-center gap-4">
-          <a href="https://www.linkedin.com" className="text-[#127ff0] hover:text-[#ff5500]">
+          <a
+            href="https://www.linkedin.com/in/bkmy43"
+            className="text-[#127ff0] hover:text-[#ff5500]"
+            title="LinkedIn Profile"
+          >
             <Linkedin className="w-9 h-9" />
+          </a>
+          <a
+            href="/iv_cv.pdf"
+            className="text-[#127ff0] hover:text-[#ff5500]"
+            title="Download CV"
+          >
+            <FileText className="w-9 h-9" />
           </a>
         </div>
       </div>
