@@ -84,7 +84,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="mb-16">
+      <section id="blog" className="mb-16">
         <div className="flex items-center gap-4 mb-8">
           <img
               src="/images/data-pipeline-logo.png"
