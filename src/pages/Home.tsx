@@ -6,13 +6,13 @@ export function Home() {
     <main className="max-w-6xl mx-auto px-4 py-8">
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Who am I</h2>
-        <div className="flex gap-8 items-start">
+        <div className="flex flex-col sm:flex-row gap-8 items-start">
           <img
             src="/images/iv_profile.jpeg"
             alt="Ilya Vladimirskiy"
-            className="w-48 h-48 object-cover rounded-lg shadow-lg"
+            className="w-48 h-48 object-cover rounded-lg shadow-lg float-left mr-6 mb-4 sm:float-none sm:mr-0 sm:mb-0"
           />
-          <div>
+          <div className="flex-1">
             <h3 className="text-2xl font-semibold mb-2">Ilya Vladimirskiy</h3>
             <p className="text-lg text-gray-600 mb-4">Berlin, Germany</p>
             <p className="text-lg">
