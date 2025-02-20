@@ -5,47 +5,43 @@ export function Home() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
       <section className="mb-12">
-        <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Building Data Teams and Platforms</h2>
-        <p className="text-lg mb-4">
-          Over <span className="font-semibold">15 years of experience</span> leading and scaling high-performing data teams in
-          startups and scaleups across healthcare, automotive, and e-commerce industries.
-        </p>
-        <p className="text-lg mb-4">
-          Expert in designing and implementing <span className="font-semibold">robust data platforms</span>, driving data-driven
-          decision-making, and fostering a culture of innovation. Proficient in cloud architecture
-          (AWS, GCP), Data Governance, ETL, and advanced analytics. Proven track record of
-          successfully leading initiatives like Data Mesh and building strong, collaborative team
-          environments. A <span className="font-semibold">servant leader</span> who is passionate about mentoring and
-          empowering team members.
-        </p>
+        <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Who am I</h2>
+        <div className="flex gap-8 items-start">
+          <img
+            src="/images/iv_profile.jpeg"
+            alt="Ilya Vladimirskiy"
+            className="w-48 h-48 object-cover rounded-lg shadow-lg"
+          />
+          <div>
+            <h3 className="text-2xl font-semibold mb-2">Ilya Vladimirskiy</h3>
+            <p className="text-lg text-gray-600 mb-4">Berlin, Germany</p>
+            <p className="text-lg">
+              Experienced data leader with 15+ years in engineering, analytics, and AI, building scalable platforms at Ada Health, CARFAX, and Zalando. Expert in cloud (AWS, GCP), agile, and bridging business and tech. Now offering fractional data leadership in data management, architecture, and analytics as a freelancer.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Data Expert</h2>
-        <p className="text-lg mb-4">
-          I have 10+ years of experience as a database developer, data engineer, and head of data engineering. After that, I spent many
-          years managing cross-functional data teams, responsible for data engineering (platform), data analytics and insights (including
-          BI/BA), and Data Science, a.k.a. ML/AI.
-        </p>
-        <p className="text-lg mb-4">
-          I can help you with any data-related project, on the technical, people, process or product sides.
-        </p>
+        <h2 className="text-3xl font-bold text-[#127ff0] mb-6">What I Do</h2>
+        <ul className="text-lg mb-4 list-disc pl-6 space-y-2">
+          <li>Interim & Fractional Data Leadership – Help as a full-time interim leader (3-9 months) or a part-time fractional data leader.</li>
+          <li>Build & Level Up Data Teams – Set up new teams from scratch or help existing ones work better and smarter.</li>
+          <li>Create Scalable Data Platforms – Design systems that make data useful, reliable, and easy to access.</li>
+          <li>Hands-On & Strategic Support – Support with everything from tech to team structure, processes, and strategy.</li>
+          <li>Make Myself Replaceable – Build a strong, self-sufficient team or help you find the right long-term leader.</li>
+        </ul>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Interim Data Leader</h2>
-        <p className="text-lg mb-4">
-          With my vast managerial experience in the data area, covering multiple domains and industries and different company sizes, I
-          can join your company or project as a freelancer for 3, 6 or 9 months and help shape your data team and platform.
-        </p>
-        <p className="text-lg mb-4">
-          My job is to make myself obsolete after the contract period: either by building an autonomous, cross-functional, end-to-end
-          responsible agile team or by helping you to hire a data manager (team lead data, head of data, director data, etc) who will take
-          over.
-        </p>
-        <p className="text-lg mb-4">
-          With my skills and knowledge, I can kick-start your data team or help you bring the existing one to the next level.
-        </p>
+        <h2 className="text-3xl font-bold text-[#127ff0] mb-6">Why Work With Me?</h2>
+        <ul className="text-lg mb-4 list-disc pl-6 space-y-2">
+          <li>15+ years of experience growing and leading data teams in startups & scaleups (healthcare, automotive, e-commerce).</li>
+          <li>10+ years of hands-on work in data engineering, database development, and leadership.</li>
+          <li>Deep Tech & Cloud Know-How – Skilled in AWS, GCP, Data Governance, ETL, and analytics.</li>
+          <li>Proven Track Record – Led Data Mesh and other big data initiatives, making teams and platforms stronger.</li>
+          <li>People First – I love mentoring, coaching, and helping teams do their best work.</li>
+        </ul>
       </section>
 
       <Testimonials />
