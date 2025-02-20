@@ -13,6 +13,10 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: false,
     rollupOptions: {
+      input: {
+        main: './index.html',
+        blog: './blog/index.html'
+      },
       output: {
         manualChunks: undefined,
         entryFileNames: 'assets/[name].js',
