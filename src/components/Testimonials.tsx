@@ -22,8 +22,14 @@ const testimonials: Testimonial[] = [
     text: "I had the pleasure to work with Ilya on a variety of topics. He combined a keen thinking and can-do attitude which I highly valued. We were sad to see him leave but I wish him all the best and beyond doubt he will succeed."
   },
   {
+    name: "Rita Krioukov",
+    role: "Co-founder and longtime CEO of Kunstschuleberlin, a leading Berlin art school with 20+ years of history, offering diverse courses to hundreds of students daily",
+    image: "/images/testimonials_rk.jpeg",
+    text: "Ilya has been a game-changer for Kunstschuleberlin. He helped us become a data-driven organization by building a solid foundation for our data platform and getting our team organized around it. Thanks to his guidance, we now use data in a way that truly supports our work. Even after setting things up, he continues to support us, making sure we stay on track. His expertise and hands-on approach made a huge difference!"
+  },
+  {
     name: "David Rodriguez",
-    role: "Former CEO of Delivery Hero Germany and CFO of Lieferando, is a data-driven leader who has led major digital transformations at multiple top companies.",
+    role: "Former CEO of Delivery Hero Germany and CFO of Lieferando, data-driven leader who has led major digital transformations at multiple top companies.",
     image: "/images/testimonials_dr.jpeg",
     text: "Ilya was dealing with billing and data warehouse at a high professional level. He is a great developer and very pragmatic personality. I liked his accuracy and data driven approach. He is stress resistant and very focussed on result and performance. It was a pleasure working with Ilya and can highly recommend him."
   }
