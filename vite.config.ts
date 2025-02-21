@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    include: ['react-helmet-async', 'lucide-react']
   },
   build: {
     outDir: 'dist',
@@ -14,13 +14,15 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        blog: './blog/index.html'
+        blog: './blog/index.html',
+        dataMeshHype: './blog/data-mesh-hype/index.html'
       },
+      external: ['react-helmet-async'],
       output: {
         manualChunks: undefined,
         entryFileNames: 'assets/[name].js',
         chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name].[ext]',
+        assetFileNames: 'assets/[name].[ext]'
       }
     }
   }
