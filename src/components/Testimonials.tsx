@@ -32,6 +32,18 @@ const testimonials: Testimonial[] = [
     role: "Former CEO of Delivery Hero Germany and CFO of Lieferando, data-driven leader who has led major digital transformations at multiple top companies.",
     image: "/images/testimonials_dr.jpeg",
     text: "Ilya was dealing with billing and data warehouse at a high professional level. He is a great developer and very pragmatic personality. I liked his accuracy and data driven approach. He is stress resistant and very focussed on result and performance. It was a pleasure working with Ilya and can highly recommend him."
+  },
+  {
+    name: "Peter Bannister",
+    role: "A leader in digital health and AI-driven innovation, Honorary Professor at University of Birmingham, former CTO at Median Technologies, VP of Life Sciences at Ada Health, CSO at UGenome Biotech",
+    image: "/images/testimonials_pb.jpeg",
+    text: "I quickly came to rely on Ilya as a valued teammate who is able to consistently blend high technical acumen with a collaborative, empathetic, and supportive leadership approach that in itself is a rare commodity."
+  },
+  {
+    name: "Valentine Gogichashvili ",
+    role: "Renowned data leader, built Zalando’s first database team, laying the foundation for a data infrastructure that now serves millions of customers.",
+    image: "/images/testimonials_vg.jpeg",
+    text: "Ilya is an exceptional engineer and I was happy to work with him at Zalando. He is a very supportive team player and greatly helped maintaining PostgreSQL based ETL processes as well as the communication with the Business Intelligence and Analytics departments. His previous experiences with databases, data processing and fundamental computer science research helped to largely improve the quality of Data Science at Zalando."
   }
 ];
 
