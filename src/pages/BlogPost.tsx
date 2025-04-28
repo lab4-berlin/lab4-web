@@ -1,4 +1,6 @@
-export function BlogPost() {
+import React from "react";
+
+export function BlogPost1() {
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex items-center gap-4 mb-8">
@@ -68,6 +70,124 @@ export function BlogPost() {
                 </p>
                 <p>
                   Thanks a lot for joining me today. I'm very interested in your ideas and experiences around data mesh so please reach out and share any feedback and hopefully see you in the next episodes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+export function BlogPost2() {
+  return (
+    <main className="max-w-6xl mx-auto px-4 py-8">
+      <div className="flex items-center gap-4 mb-8">
+        <img 
+          src="/images/data-pipeline-logo.png" 
+          alt="Data PipeLINE Logo" 
+          className="w-36"
+        />
+        <div>
+          <h2 className="text-5xl font-bold text-[#127ff0]">Blog</h2>
+          <p className="text-xl text-[#127ff0]">Smoking Pipes and Talking about Data and Engineering</p>
+        </div>
+      </div>
+
+      <div className="grid gap-12">
+        <div className="bg-gray-50 rounded-xl p-8">
+          <h3 className="text-2xl font-bold text-[#127ff0] mb-4">Talk at Thoughtworks, March 2025: "Data Mesh Beyond the Hype: Why People Matter More Than Tech"</h3>
+          <p className="text-lg mb-6">
+            Data Mesh failures are not about tech, they are about people. This talk shows why communication, ownership, and trust matter more than tools. We explore lessons from Agile, DevOps, and hiring, and why culture must come first.
+          </p>
+          <div className="aspect-video w-full mb-6">
+            <iframe 
+              className="w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/iRQas-59MMU"
+              title="Data Mesh Beyond the Hype: Why People Matter More Than Tech"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="space-y-6">
+            <div>
+              <h4 className="text-xl font-bold text-[#127ff0] mb-2">Short TLDR version:</h4>
+              <p className="text-lg">
+                “Can we do Data Mesh here?” - That is the question many companies ask, and too often, they expect a technical answer. But as I argue in my talk, the success of Data Mesh lies far beyond the tech stack. It is a socio-technical approach, and the people part is too often overlooked.
+                Starting with Newton, Feynman, and even Napoleon, I build the case that communication, ownership, and trust are far more critical than how many data tools or cloud resources you have. Data Mesh promises autonomy, decentralization, and agility, but these ideals fall flat without cultural readiness.
+                I discuss the four core principles of Data Mesh—domain ownership, data as a product, self-serve platforms, and federated governance—and then zoom in on the real obstacles: siloed teams, weak feedback loops, lack of cross-functional skills, and blind cargo-culting of “what big tech does.”
+                Drawing parallels to DevOps, Agile, and Quality Assurance, I show how those movements evolved not just by adopting new tools but by shifting mindsets. The same is required for Data Mesh. It is not enough to break up a monolith—you have to empower people to own what they build and understand how it connects to business value.
+                I also touch on hiring for Data Mesh: why “soft skills are more crucial than hard skills”, why “weak yes = no”, and why generalists thrive in modern data setups. We wrap up with takeaways on autonomy, governance as a service (not a bottleneck), and servant leadership as the foundation for resilient, effective teams.
+                If you care about real transformation, not just buzzwords, this talk is for you.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xl font-bold text-[#127ff0] mb-2">Full transcript:</h4>
+              <div className="text-base space-y-4 text-gray-700">
+                <p>
+                Thanks a lot for the intro and for the opportunity. I will talk about Data Mesh, but primarily about people. The title is “Data Mesh beyond the hype”. In a lot of cases it actually fails because of people, not because of tech, and I think that's something we should try to fix together.
+                </p>
+                <p>
+                Today I am standing on the shoulders of the giants, people much smarter than me, who were talking about similar things for centuries. Newton: madness of men is not predictable.
+                </p>
+                <p>
+                Richard Feynman: There is reality and then you have PR presentations and marketing materials and so on. And sometimes the laws of nature and physics kind of win. Maybe you should see the facts.
+                </p>
+                <p>
+                Last but not least Napoleon apparently used to say that 75% of the battle's success depends on people and communication between them, and only 25% are things like how many guns you have, how much manpower.
+                </p>
+                <p>
+                Now let’s talk about Data Mesh. I will briefly elaborate on what it is about and why the social component is so important.
+                </p>
+                <p>
+                Zhamak, who used to work at a company you probably know, introduced the term in 2019. Data Mesh is built upon four basic principles. First, domain ownership, where teams own their data. Second, “data as a product” — you treat data with the same quality criteria as products. Third, you need a self-serve data platform so teams can build and own their data products. And fourth, federated computational governance — freedom, but also rules, especially important in regulated industries like banking or e-health.
+                </p>
+                <p>
+                Data Mesh is not just about tech. It is a socio-technical approach. It is not an architecture or a tool, but something deeper in the organizational setup. And it will likely fail if you focus only on technology.
+                </p>
+                <p>
+                Now a few anecdotes from client interviews. Companies often ask about doing Data Mesh but focus only on tech stacks, not on people or communication. They treat it like an engineering upgrade, not an organizational change.
+                </p>
+                <p>
+                Two more examples from the past. I once interviewed for a director position in a scale-up. Great technical talk, but I was rejected because I was "not passionate enough about Data Mesh." Another time, a startup with a 3-person data team asked how to decentralize. I gently challenged them: what business problem are you solving? Again, I was rejected for being "too traditional." I am happy I didn't end up in either company.
+                </p>
+                <p>
+                Why does this happen? Cargo cult thinking. Companies copy big players without understanding the principles. You have to start with a real problem, not a fashionable solution.
+                </p>
+                <p>
+                Now let's talk about decentralization. Lessons from DevOps, QA, and microservices architecture show us decentralization increases complexity. Monoliths are not always bad. Microservices shift complexity to communication layers. Same with Data Mesh — decentralization is not a silver bullet.
+                </p>
+                <p>
+                Agile development showed us the same. The mindset shift took time. Misunderstanding and cargo cult behaviors were common. True Agile is not just standups and retrospectives — it is about principles.
+                </p>
+                <p>
+                QA teams used to be centralized. Developers threw work over the wall. Now QA is part of the team. Everyone tests. The same needs to happen with data.
+                </p>
+                <p>
+                DevOps broke silos. Platform teams now enable others. But if you don't govern it right, you get chaos. Data Mesh has similar challenges.
+                </p>
+                <p>
+                Splitting a bad monolith won't solve root problems. If you have poor communication or a weak data culture, Data Mesh will not fix it. Beautiful dashboards won’t save you if no one uses data for decisions.
+                </p>
+                <p>
+                What can we do? Focus on autonomy, hiring, and governance. Teams need trust. They should own their data products end-to-end. Software engineers should understand data. Data people should improve their engineering skills. Teams should organize themselves and be business-aware.
+                </p>
+                <p>
+                We also need to stop certain behaviors. No more data engineers waiting for perfect tickets. No more analysts avoiding technical skills. No more ML engineers blaming bad data without clear quality criteria.
+                </p>
+                <p>
+                Decentralization still needs governance. Like the University of Washington paved paths where students naturally walked, governance should formalize good practices. Ownership, data contracts, observability, and data catalogs are crucial.
+                </p>
+                <p>
+                Servant leadership is essential. Leaders should support, not control. The inverted pyramid idea: employees deliver value, managers support them. Good teams outperform traditional structures, even in harder economic times.
+                </p>
+                <p>
+                Finally, hiring for Data Mesh. “Weak yes” is a no. Hiring mistakes are costly. Soft skills matter more than tech skills. Generalists are increasingly valuable. Interviewing is a skill — remember you hire for real work, not just for interview performance.
+                </p>
+                <p>
+                Final takeaway: Start with people, not tech. Solve real problems. Data Mesh is not microservices for data. It is not a silver bullet. Teams must take ownership and give honest feedback. People first. Thanks a lot for your attention.
                 </p>
               </div>
             </div>

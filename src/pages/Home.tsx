@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Testimonials } from '../components/Testimonials';
+import React from 'react';
 
 export function Home() {
   return (
@@ -111,7 +112,7 @@ export function Home() {
           </div>
 
           <div className="bg-gray-50 rounded-xl p-6">
-            <h3 className="text-2xl font-bold text-[#127ff0] mb-4">Episodes:</h3>
+            <h3 className="text-2xl font-bold text-[#127ff0] mb-4">Episodes, Talks, Podcasts:</h3>
             <div className="space-y-4">
               <Link
                   to="/blog/data-mesh-hype"
@@ -121,6 +122,16 @@ export function Home() {
                 <p className="text-gray-600 mt-2">
                   Everyone was talking about Data Mesh a few years ago, now, not so much. Was it just hype, or is there
                   something deeper to learn?
+                </p>
+              </Link>
+              
+              <Link
+                  to="/blog/data-mesh-people"
+                  className="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow"
+              >
+                <h4 className="text-xl font-bold text-[#127ff0]">Talk at Thoughtworks, March 2025: "Data Mesh Beyond the Hype: Why People Matter More Than Tech"</h4>
+                <p className="text-gray-600 mt-2">
+                   Data Mesh failures are not about tech, they are about people. This talk shows why communication, ownership, and trust matter more than tools. We explore lessons from Agile, DevOps, and hiring, and why culture must come first.
                 </p>
               </Link>
             </div>

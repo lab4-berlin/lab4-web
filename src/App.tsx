@@ -3,7 +3,8 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
-import { BlogPost } from './pages/BlogPost';
+import { BlogPost1, BlogPost2 } from './pages/BlogPost';
+import React from 'react';
 
 function App() {
   const location = useLocation();
@@ -25,7 +26,8 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog/data-mesh-hype" element={<BlogPost />} />
+        <Route path="/blog/data-mesh-hype" element={<BlogPost1 />} />
+        <Route path="/blog/data-mesh-people" element={<BlogPost2 />} />
       </Routes>
       <Footer />
     </div>
