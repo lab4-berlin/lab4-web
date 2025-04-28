@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React from 'react';
 
 interface Testimonial {
   name: string;
@@ -15,6 +16,12 @@ const testimonials: Testimonial[] = [
     image: "/images/testimonials_cv.jpeg",
     text: "Ilya is an excellent programmer, a hard worker, a dedicated and loyal employee and a great team worker. It is a pleasure to work with him."
   },
+  {
+    name: "Gülsah Wilke",
+    role: "Industry leader featured by Forbes, co-founded 2hearts, and helped grow Ada Health, DN Capital, McKinsey, and IBM into key players in tech and innovation.",
+    image: "/images/testimonials_gw.jpeg",
+    text: "Thank you so much Ilya Vladimirskiy, very much appreciated working with you at Ada Health. You are a strong leader in data and engineering!"
+  }, 
   {
     name: "Michael Schrezenmaier",
     role: "Former Co-CEO of Pipedrive and CEO Europe at SumUp, now Partner at Incharge Capital Partners.",
